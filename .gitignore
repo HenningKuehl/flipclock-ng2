@@ -1,0 +1,14 @@
+#Module stuff
+node_modules/
+typings/
+
+#IDE
+.idea/
+
+#Windows
+npm-debug.log
+npm-debug.log.2046270691
+
+#Build
+dist/
+src/app/config/config.constant.ts
