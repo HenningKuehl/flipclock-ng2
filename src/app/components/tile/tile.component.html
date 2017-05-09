@@ -1,0 +1,23 @@
+<div class="element">
+    <div class="tile" [ngClass]="{'active': !change, 'before': change, 'run': run}">
+        <div class="above" [ngClass]="{'before': change}">
+            <div class="shadow"></div>
+            <number [number]="change ? currNumber : nextNumber" [above]="true"></number>
+        </div>
+        <div class="below" [ngClass]="{'before': change}">
+            <div class="shadow"></div>
+            <number [number]="change ? currNumber : nextNumber" [below]="true"></number>
+        </div>
+    </div>
+    <div class="tile" [ngClass]="{'active': change, 'before': !change, 'run': run}">
+        <div class="above" [ngClass]="{'before': change}">
+            <div class="shadow"></div>
+            <number [number]="change ? nextNumber : currNumber" [above]="true"></number>
+        </div>
+        <div class="below" [ngClass]="{'before': change}">
+            <div class="shadow"></div>
+            <number [number]="change ? nextNumber : currNumber" [below]="true"></number>
+        </div>
+    </div>
+</div>
+

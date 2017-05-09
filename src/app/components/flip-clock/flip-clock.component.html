@@ -1,0 +1,19 @@
+<div class="flip-counter clock flip-clock-wrapper">
+    <!--<span class="flip-clock-divider hours">-->
+        <!--<span class="flip-clock-label">Hours</span>-->
+    <!--</span>-->
+    <tile-group [number]="10"></tile-group>
+    <span class="flip-clock-divider minutes">
+        <!--<span class="flip-clock-label">Minutes</span>-->
+        <span class="flip-clock-dot top"></span>
+        <span class="flip-clock-dot bottom"></span>
+    </span>
+    <tile-group [number]="32"></tile-group>
+    <span class="flip-clock-divider seconds">
+        <!--<span class="flip-clock-label">Seconds</span>-->
+        <span class="flip-clock-dot top"></span>
+        <span class="flip-clock-dot bottom"></span>
+    </span>
+    <tile-group [number]="20"></tile-group>
+</div>
+<button (click)="start()">Start</button>

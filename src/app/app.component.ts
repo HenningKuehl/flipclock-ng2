@@ -4,7 +4,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'my-app',
+    selector: 'app',
     templateUrl: './app.component.html'
 })
 

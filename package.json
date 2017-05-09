@@ -31,6 +31,7 @@
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.16.1",
     "jasmine-core": "^2.4.1",
+    "node-sass": "^4.5.2",
     "null-loader": "^0.1.1",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.2",
