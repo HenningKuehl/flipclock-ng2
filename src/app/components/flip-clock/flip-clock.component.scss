@@ -1,16 +1,13 @@
-@import "../../styles/color.style";
-@import "../../styles/keyframe.style";
-
-.flip-clock-wrapper {
+.wrapper {
   font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
   -webkit-user-select: none;
 
-  text-align: center;
+  /*text-align: center;
   position: relative;
-  width: 100%;
+  width: 100%;*/
   margin: 1em;
 
-  * {
+  /** {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -21,9 +18,9 @@
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
+  }*/
 
-  &.clearfix {
+  /*&.clearfix {
     *zoom: 1;
 
     &:before, &:after {
@@ -37,67 +34,10 @@
   }
 
   &:after, &:before {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " "; !* 1 *!
+    display: table; !* 2 *!
   }
   &:after {
     clear: both;
-  }
-}
-
-.flip-clock-meridium {
-  background: none !important;
-  box-shadow: 0 0 0 !important;
-  font-size: 36px !important;
-}
-
-.flip-clock-divider {
-  float: left;
-  display: inline-block;
-  position: relative;
-  width: 20px;
-  height: 100px;
-
-  &:first-child {
-    width: 0;
-  }
-
-  .flip-clock-label {
-    position: absolute;
-    top: -1.5em;
-    right: -86px;
-    color: $black;
-    text-shadow: none;
-  }
-
-  &.minutes {
-    .flip-clock-label {
-      right: -88px;
-    }
-  }
-
-  &.seconds {
-    .flip-clock-label {
-      right: -91px;
-    }
-  }
-}
-
-.flip-clock-dot {
-  display: block;
-  background: #323434;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  border-radius: 50%;
-  box-shadow: 0 0 5px $dotShadowBlack;
-  left: 5px;
-
-  &.top {
-    top: 30px;
-  }
-
-  &.bottom {
-    bottom: 30px;
-  }
+  }*/
 }

@@ -6,31 +6,38 @@ import {Component, OnInit} from '@angular/core';
 @Component({
     selector: 'flip-clock',
     templateUrl: 'flip-clock.component.html',
-    styleUrls: ['flip-clock.scss']
+    styleUrls: ['flip-clock.component.scss']
 })
 
 export class FlipClockComponent implements OnInit {
-    currNumber: number;
-    nextNumber: number;
-    switch: boolean = false;
+    currNumber: number = 1325;
+    seconds: number;
+    minutes: number;
+    hours: number;
 
     constructor() {
-        this.nextNumber = 0;
+        this.currNumber = 0;
+        this.seconds = 0;
+        this.minutes = 0;
+        this.hours = 0;
     }
 
     ngOnInit() {
+        this.start();
     }
 
     start() {
         setInterval(() => {
-            this.switch = !this.switch;
-            this.currNumber = this.nextNumber;
-            this.nextNumber++;
-            /*if(this.nextNumber === 9) {
-                this.nextNumber = 0;
-            } else {
-                this.nextNumber++;
-            }*/
+            this.currNumber--;
+            this.splitNumber();
         }, 1000);
+    }
+
+    private splitNumber() {
+        this.hours = Math.floor(this.currNumber / 60 / 60);
+        let tmp = this.currNumber - (this.hours * 60 * 60);
+        this.minutes = Math.floor(tmp / 60);
+        tmp = tmp - this.minutes * 60;
+        this.seconds = tmp;
     }
 }

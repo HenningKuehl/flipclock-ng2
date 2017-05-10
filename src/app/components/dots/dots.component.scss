@@ -1,0 +1,28 @@
+@import "../../styles/color.style";
+
+.wrapper {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 100px;
+
+  .dot {
+    display: block;
+    background: #323434;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 5px $dotShadowBlack;
+    left: 5px;
+
+    &.top {
+      top: 30px;
+    }
+
+    &.bottom {
+      bottom: 30px;
+    }
+  }
+}

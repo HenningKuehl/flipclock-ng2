@@ -1,2 +1,3 @@
-<!--<tile-group-label [text]="'test'"></tile-group-label>-->
-<tile *ngFor="let tile of tiles" [currNumber]="tile"></tile>
+<tile [nextNumber]="tiles[0] || 0"></tile>
+<tile [nextNumber]="tiles[1] || 0"></tile>
+<dots *ngIf="dots"></dots>
