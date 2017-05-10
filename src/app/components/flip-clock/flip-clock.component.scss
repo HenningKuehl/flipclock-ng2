@@ -1,0 +1,43 @@
+.wrapper {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none;
+
+  /*text-align: center;
+  position: relative;
+  width: 100%;*/
+  margin: 1em;
+
+  /** {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }*/
+
+  /*&.clearfix {
+    *zoom: 1;
+
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      lear: both;
+    }
+  }
+
+  &:after, &:before {
+    content: " "; !* 1 *!
+    display: table; !* 2 *!
+  }
+  &:after {
+    clear: both;
+  }*/
+}
